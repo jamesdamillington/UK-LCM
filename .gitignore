@@ -1,6 +1,9 @@
 /data/
 /data-working/
 
+#ignore files (and folders!) ending answers.ipynb 
+**/*answers.ipynb   
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
