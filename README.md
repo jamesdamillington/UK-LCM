@@ -9,7 +9,7 @@ Notebooks used directly in teaching:
 - [`uk-lcm-wales-analysis.ipynb`](uk-lcm-wales-analysis.ipynb): demonstrating the main land cover change analysis using UK CEH LCM data
 - [`uk-lcm-wales-analysis-presplit.ipynb`](uk-lcm-wales-analysis-presplit.ipynb): single notebook containing combined code of `uk-lcm-wrangling.ipynb` and `uk-lcm-wales-analysis.ipynb`  
 - [`uk-lcm-wales-analysis-exercises.ipynb`](uk-lcm-wales-analysis-exercises.ipynb): `uk-lcm-wales-analysis.ipynb` with exercises appended
-- [`uk-lcm-wales-analysis-exercises-answers.ipynb`](uk-lcm-wales-analysis-exercises-answers.ipynb): `uk-lcm-wales-analysis-exercises.ipynb` with answers appended (not shared on GitHub)
+- `uk-lcm-wales-analysis-exercises-answers.ipynb`: `uk-lcm-wales-analysis-exercises.ipynb` with answers appended (not shared on GitHub)
 
 ## Demos
 Supporting notebooks that might be useful for students
