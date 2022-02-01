@@ -2,7 +2,10 @@
 /data-working/
 
 #ignore files (and folders!) ending answers.ipynb 
-**/*answers.ipynb   
+*answers.ipynb   
+
+#ignore files (and folders!) containing working
+*working.ipynb    
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
