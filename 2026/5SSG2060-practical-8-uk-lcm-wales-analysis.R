@@ -1,9 +1,12 @@
-library(terra)  #to handle raster data
-library(sf)  #to handle vector data
+#R version of Principles of SDS practical, Section 8 (Raster Manipulation)
 
-library(dplyr)   #for data manip in Section 4
-library(tidyr)   #for data manip in Section 4
-library(ggplot2) #for plotting in Section 4
+#load packages
+library(terra)  #to handle raster data, see https://rspatial.github.io/terra/index.html
+library(sf)  #to handle vector data, see https://r-spatial.github.io/sf/
+
+library(dplyr)   #for data manip in Section 4, https://dplyr.tidyverse.org/ 
+library(tidyr)   #for data manip in Section 4, https://tidyr.tidyverse.org/
+library(ggplot2) #for plotting in Section 4, https://ggplot2.tidyverse.org/
 
 #####
 #Section 1
@@ -172,8 +175,6 @@ writeRaster(lcm2000_wales6, "data/lcm2000_wales6_out_r.tif", overwrite=T)
 #Section 4
 
 
-
-
 counts_df <- tibble("1990"=counts1990_6$count, 
                     "2015"=counts2015_6$count)
 counts_df
@@ -228,8 +229,10 @@ cls <- data.frame(id=1:6,
                   cols=c('darkgreen', 'lightyellow', 'lightgreen', 'blue', 'black','grey' )
                   )
 
-#set categories in the map
+#set the raster to be categorical - terra handles categorical rasters better than numpy
 levels(lcm2015_wales6) <- cls[,c('id','cover')]
+#we could have done this earlier, but the above matches python more closely
+#see https://rspatial.github.io/terra/reference/factors.html
 
 #set the colours for each class
 coltab(lcm2015_wales6) <- cls[,c('id','cols')]
