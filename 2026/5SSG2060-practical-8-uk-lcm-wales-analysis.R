@@ -1,4 +1,5 @@
 #R version of Principles of SDS practical, Section 8 (Raster Manipulation)
+#James D.A. Millington, March 2026
 
 #load packages
 library(terra)  #to handle raster data, see https://rspatial.github.io/terra/index.html
